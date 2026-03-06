@@ -3,6 +3,11 @@ sogPic.addEventListener("mousedown", moveRandom);
 
 let meowAudio = document.getElementById("mew")
 
+window.onresize = function sogReset() {
+    sogPic.style.top = "0px"
+    sogPic.style.left = "0px"
+}
+
 function moveRandom() {
     let screenWidth = window.innerWidth;
     let screenHeight = window.innerHeight;
@@ -22,4 +27,9 @@ function moveRandom() {
 
     sogPic.style.top = newHeight;
     sogPic.style.left = newWidth;
+}
+
+function sogReset() {
+    sogPic.style.top = "0px"
+    sogPic.style.left = "0px"
 }
